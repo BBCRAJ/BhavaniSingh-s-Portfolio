@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajpurohit Bhavani Singh | Cyber Security Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #ff6a00, #ee0979);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        /* C-DAC Corner Placement */
+        .cdac {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 7px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #fcd34d;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 30px 0;
+        }
+
+        section h2 {
+            color: #ee0979;
+            border-bottom: 3px solid #ff6a00;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2em;
+        }
+
+        section p {
+            font-size: 1em;
+        }
+
+        /* Skills List */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills-list li {
+            background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59);
+            color: #fff;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 0.9em;
+        }
+
+        .skills-list li:hover {
+            transform: scale(1.05);
+        }
+
+        /* Project Styling */
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f3f3f3;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project h3 {
+            font-size: 1.5em;
+            color: #ff6a00;
+            margin-top: 0;
+        }
+
+        .project p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .project a {
+            color: #ff6a00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #ee0979;
+        }
+
+        /* Qualification Styling */
+        .qualification {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: linear-gradient(135deg, #8e2de2, #4a00e0);
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .qualification img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .qualification p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, #02aab0, #00cdac);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        #contact p {
+            font-size: 1.1em;
+        }
+
+        #contact a {
+            color: #fcd34d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            .skills-list li {
+                font-size: 0.85em;
+                padding: 7px 10px;
+            }
+
+            .project h3 {
+                font-size: 1.4em;
+            }
+
+            .project p {
+                font-size: 1em;
+            }
+
+            .qualification p {
+                font-size: 0.95em;
+            }
+
+            #contact p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            .skills-list li {
+                font-size: 0.8em;
+                padding: 6px 8px;
+            }
+
+            .project h3 {
+                font-size: 1.2em;
+            }
+
+            .project p {
+                font-size: 0.9em;
+            }
+
+            .qualification p {
+                font-size: 0.85em;
+            }
+
+            #contact p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Rajpurohit Bhavani Singh</h1>
+            <p>Cyber Security Intern</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#qualifications">Qualifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cdac">C-DAC</div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Rajpurohit Bhavani Singh, a Cyber Security Intern at C-DAC Hyderabad. I specialize in network security, vulnerability assessment, and penetration testing. I have a passion for enhancing cybersecurity protocols and have worked on advanced machine learning models for threat detection.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+<section id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Cyber Security Intern at C-DAC Hyderabad</h3>
+            <p>Currently working as a Cyber Security Intern at C-DAC Hyderabad. My responsibilities include participating in various security assessments, developing security protocols, and assisting in the implementation of cybersecurity measures.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for any cybersecurity-related queries or collaborations!</p>
+        <p>Email: <a href="mailto:rajpurohitbhavanisingh2001@gmail.com">rajpurohitbhavanisingh2001@gmail.com</a></p>
+    </div>
+</section>
+    
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Rajpurohit Bhavani Singh. All rights reserved.</p>
+    </div>
+</footer>
+
